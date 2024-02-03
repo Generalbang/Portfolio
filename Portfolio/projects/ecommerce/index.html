@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header section -->
+
+      <header>
+        <!-- nav and logo -->
+
+        <nav class="nav">
+          <img class="open" src="./images/icon-menu.svg" alt="" />
+          <img class="logo" src="./images/logo.svg" alt="Sneakers logo" />
+          <ul class="norm">
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <ul class="navbar">
+            <img class="closenav" src="./images/icon-close.svg" alt="" />
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- cart and profile -->
+        <nav class="prof">
+          <div class="catalog">
+            <img src="./images/icon-cart.svg" alt="Cart Icon" />
+            <div class="cart-content">
+              <h2>Cart</h2>
+              <hr />
+              <div class="items">
+                <p>Your cart is empty.</p>
+              </div>
+            </div>
+          </div>
+          <img src="./images/image-avatar.png" alt="profile image" />
+        </nav>
+      </header>
+
+      <hr />
+
+      <section class="main">
+        <!-- slider -->
+
+        <!-- sneakers image section -->
+        <main>
+          <section class="image">
+            <div class="img__container show-modal">
+              <div class="boot">
+                <img src="./images/image-product-1.jpg" alt="" />
+              </div>
+
+              <div class="boot">
+                <img src="./images/image-product-2.jpg" alt="" />
+              </div>
+
+              <div class="boot">
+                <img src="./images/image-product-3.jpg" alt="" />
+              </div>
+
+              <div class="boot">
+                <img src="./images/image-product-4.jpg" alt="" />
+              </div>
+
+              <button class="slider__btn slider__btn--left">&larr;</button>
+              <button class="slider__btn slider__btn--right">&rarr;</button>
+            </div>
+            <div class="sneaker__img">
+              <img
+                class="box"
+                data-slide="0"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+
+              <img
+                class="box"
+                data-slide="1"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+
+              <img
+                class="box"
+                data-slide="2"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+
+              <img
+                class="box"
+                data-slide="3"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </section>
+          <section class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <div class="img__containers">
+              <div class="boots">
+                <img src="./images/image-product-1.jpg" alt="" />
+              </div>
+
+              <div class="boots">
+                <img src="./images/image-product-2.jpg" alt="" />
+              </div>
+
+              <div class="boots">
+                <img src="./images/image-product-3.jpg" alt="" />
+              </div>
+
+              <div class="boots">
+                <img src="./images/image-product-4.jpg" alt="" />
+              </div>
+
+              <button class="slider__btn slider__btn--left">
+                <img src="./images/icon-previous.svg" alt="" />
+              </button>
+              <button class="slider__btn slider__btn--right">
+                <img src="./images/icon-next.svg" alt="" />
+              </button>
+            </div>
+            <div class="overlay hidden"></div>
+            <div class="sneaker__imgs">
+              <img
+                class="box"
+                data-slide="0"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+
+              <img
+                class="box"
+                data-slide="1"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+
+              <img
+                class="box"
+                data-slide="2"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+
+              <img
+                class="box"
+                data-slide="3"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </section>
+        </main>
+
+        <!-- sneakers detail section -->
+        <section class="details">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <h5>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </h5>
+          <!-- price section -->
+          <div class="price">
+            <div class="discount">
+              <h3>$125.00 <span>50%</span></h3>
+              <p>$250.00</p>
+            </div>
+          </div>
+
+          <!-- add to cart section -->
+
+          <div class="add__to__cart">
+            <div class="count">
+              <button class="dec">-</button>
+              <span class="no">0</span>
+              <button class="inc">+</button>
+            </div>
+            <div class="add__cart">
+              <img src="./images/icon-cart-1.svg" alt="" />
+              <p>Add to cart</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
